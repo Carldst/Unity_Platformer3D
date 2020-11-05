@@ -22,8 +22,7 @@ public class Clue : MonoBehaviour
             yield return new WaitForEndOfFrame();
             yield return new WaitForEndOfFrame();
             
-        }
-        
+        }   
     }
     IEnumerator Disparition()
     {
@@ -38,9 +37,7 @@ public class Clue : MonoBehaviour
             yield return new WaitForEndOfFrame();
 
         }
-
     }
-
     private void OnTriggerEnter(Collider other)
     {
         StartCoroutine(Apparition());
